@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  #get 'static/hello_world'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +55,9 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  #get 'hello_world' #to: 'static#hello_world'
+
+ get 'hello_world' => 'static#hello_world'
+  #root 'statics#hello_world'
 end
